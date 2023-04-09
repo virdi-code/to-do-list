@@ -1,5 +1,5 @@
 //to do list app
-
+//initial project by Brad Traversy
 const itemForm = document.getElementById('item-form');
 const itemInput = document.getElementById('item-input');
 const itemList = document.getElementById('item-list');
