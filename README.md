@@ -1,3 +1,3 @@
-# To DO LIST APP
+# TO-DO LIST APP
 
 To-do list app with Vanilla JS
