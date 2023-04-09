@@ -1,3 +1,5 @@
+//to do list app
+
 const itemForm = document.getElementById('item-form');
 const itemInput = document.getElementById('item-input');
 const itemList = document.getElementById('item-list');
@@ -17,13 +19,13 @@ function onAddItemSubmit(e) {
 
     const newItem = itemInput.value;
 
-    //validate input
+    //validating the input
     if(newItem.value === ' ') {
         alert('Add an item');
         return;
     }
 
-    //check for edit mode
+    //checking for editmode
     if (isEditMode) {
         const itemToEdit = itemList.querySelector('.edit-mode')
 
@@ -42,7 +44,7 @@ function onAddItemSubmit(e) {
 
     //create item DOM element
     addItemToDOM(newItem);
-    //add item to local storage
+    //adding item to local storage
     addItemToStorage(newItem);
     checkUI();
 
@@ -50,14 +52,14 @@ function onAddItemSubmit(e) {
 }
 
 function addItemToDOM(item) {
-        //create list items
+        //creating the list items
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(item));
     
         const button = createButton('remove-item btn-link text-red');
         li.appendChild(button);
         
-        //add li to the DOM 
+        //adding li to DOM 
         itemList.appendChild(li);
 }
 
